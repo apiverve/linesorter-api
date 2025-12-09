@@ -1,0 +1,109 @@
+openapi: 3.0.4
+info:
+  title: Line Sorter
+  description: Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/linesorter:
+    post:
+      summary: Sort Lines
+      description: Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.
+      operationId: linesorter
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  sorted:
+                  - An apple a day keeps the doctor away
+                  - banana
+                  - Cherry blossoms bloom in spring
+                  - date
+                  - The quick brown fox jumps over the lazy dog
+                  original:
+                  - An apple a day keeps the doctor away
+                  - banana
+                  - Cherry blossoms bloom in spring
+                  - date
+                  - The quick brown fox jumps over the lazy dog
+                  lineCount: 5
+                  order: asc
+                  caseSensitive: false
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                lines:
+                  type: array
+                  description: Array of text lines to sort (max 10,000)
+                  example:
+                  - The quick brown fox jumps over the lazy dog
+                  - An apple a day keeps the doctor away
+                  - banana
+                  - Cherry blossoms bloom in spring
+                  - date
+                order:
+                  type: string
+                  description: "Sort order: 'asc' or 'desc'"
+                  default: asc
+                  example: asc
+                caseSensitive:
+                  type: boolean
+                  description: Enable case-sensitive sorting
+                  default: false
+                  example: false
+              required:
+              - lines
+              example:
+                lines:
+                - The quick brown fox jumps over the lazy dog
+                - An apple a day keeps the doctor away
+                - banana
+                - Cherry blossoms bloom in spring
+                - date
+                order: asc
+                caseSensitive: false
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
