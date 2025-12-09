@@ -1,0 +1,35 @@
+{
+  "name": "@apiverve/linesorter",
+  "version": "1.1.12",
+  "description": "Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/linesorter-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "line sorter", "text sorter", "alphabetical sort", "sort lines", "text organization"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/linesorter-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/linesorter?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.13.2"
+  }
+}
