@@ -9,30 +9,15 @@ const API_KEY = process.env.APIVERVE_API_KEY || 'YOUR_API_KEY_HERE';
 const API_URL = 'https://api.apiverve.com/v1/linesorter';
 
 /**
- * Make a POST request to the Line Sorter API
+ * Make a GET request to the Line Sorter API
  */
 async function callLineSorterAPI() {
   try {
-    // Request body
-    const requestBody &#x3D; {
-    &quot;lines&quot;: [
-        &quot;The quick brown fox jumps over the lazy dog&quot;,
-        &quot;An apple a day keeps the doctor away&quot;,
-        &quot;banana&quot;,
-        &quot;Cherry blossoms bloom in spring&quot;,
-        &quot;date&quot;
-    ],
-    &quot;order&quot;: &quot;asc&quot;,
-    &quot;caseSensitive&quot;: false
-};
-
     const response = await fetch(API_URL, {
-      method: 'POST',
+      method: 'GET',
       headers: {
-        'x-api-key': API_KEY,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(requestBody)
+        'x-api-key': API_KEY
+      }
     });
 
     // Check if response is successful
