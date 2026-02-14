@@ -20,7 +20,7 @@ namespace APIVerve.Examples
         private static readonly string API_URL = "https://api.apiverve.com/v1/linesorter";
 
         /// <summary>
-        /// Make a POST request to the Line Sorter API
+        /// Make a GET request to the Line Sorter API
         /// </summary>
         static async Task<JsonDocument> CallLineSorterAPI()
         {
@@ -29,13 +29,7 @@ namespace APIVerve.Examples
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("x-api-key", API_KEY);
 
-                // Request body
-                var requestBody &#x3D; new { lines &#x3D; The quick brown fox jumps over the lazy dog,An apple a day keeps the doctor away,banana,Cherry blossoms bloom in spring,date, order &#x3D; &quot;asc&quot;, caseSensitive &#x3D; false };
-
-                var jsonContent = JsonSerializer.Serialize(requestBody);
-                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
-
-                var response = await client.PostAsync(API_URL, content);
+                var response = await client.GetAsync(API_URL);
 
                 // Check if response is successful
                 response.EnsureSuccessStatusCode();
