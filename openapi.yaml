@@ -1,23 +1,25 @@
 openapi: 3.0.4
 info:
   title: Line Sorter
-  description: Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.
+  description: >-
+    Line Sorter organizes text by sorting lines alphabetically in ascending or
+    descending order with case-sensitive options.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/linesorter:
     post:
       summary: Sort Lines
-      description: Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.
+      description: Sort lines of text alphabetically
       operationId: linesorter
       parameters: []
       responses:
@@ -35,24 +37,18 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   sorted:
-                  - An apple a day keeps the doctor away
-                  - banana
-                  - Cherry blossoms bloom in spring
-                  - date
-                  - The quick brown fox jumps over the lazy dog
-                  original:
-                  - An apple a day keeps the doctor away
-                  - banana
-                  - Cherry blossoms bloom in spring
-                  - date
-                  - The quick brown fox jumps over the lazy dog
+                    - An apple a day keeps the doctor away
+                    - banana
+                    - Cherry blossoms bloom in spring
+                    - date
+                    - The quick brown fox jumps over the lazy dog
                   lineCount: 5
                   order: asc
                   caseSensitive: false
@@ -61,7 +57,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
       requestBody:
         required: true
         content:
@@ -70,35 +66,16 @@ paths:
               type: object
               properties:
                 lines:
-                  type: array
+                  type: string
                   description: Array of text lines to sort (max 10,000)
-                  example:
-                  - The quick brown fox jumps over the lazy dog
-                  - An apple a day keeps the doctor away
-                  - banana
-                  - Cherry blossoms bloom in spring
-                  - date
                 order:
                   type: string
-                  description: "Sort order: 'asc' or 'desc'"
-                  default: asc
-                  example: asc
+                  description: Sort order
                 caseSensitive:
                   type: boolean
                   description: Enable case-sensitive sorting
-                  default: false
-                  example: false
               required:
-              - lines
-              example:
-                lines:
-                - The quick brown fox jumps over the lazy dog
-                - An apple a day keeps the doctor away
-                - banana
-                - Cherry blossoms bloom in spring
-                - date
-                order: asc
-                caseSensitive: false
+                - lines
 components:
   securitySchemes:
     api_key:
@@ -106,4 +83,13 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
+sampleRequest:
+  lines:
+    - The quick brown fox jumps over the lazy dog
+    - An apple a day keeps the doctor away
+    - banana
+    - Cherry blossoms bloom in spring
+    - date
+  order: asc
+  caseSensitive: false
