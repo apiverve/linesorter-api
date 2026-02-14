@@ -14,28 +14,14 @@ API_URL = 'https://api.apiverve.com/v1/linesorter'
 
 def call_linesorter_api():
     """
-    Make a POST request to the Line Sorter API
+    Make a GET request to the Line Sorter API
     """
     try:
-        # Request body
-        request_body &#x3D; {
-    &#x27;lines&#x27;: [
-        &#x27;The quick brown fox jumps over the lazy dog&#x27;,
-        &#x27;An apple a day keeps the doctor away&#x27;,
-        &#x27;banana&#x27;,
-        &#x27;Cherry blossoms bloom in spring&#x27;,
-        &#x27;date&#x27;
-    ],
-    &#x27;order&#x27;: &#x27;asc&#x27;,
-    &#x27;caseSensitive&#x27;: false
-}
-
         headers = {
-            'x-api-key': API_KEY,
-            'Content-Type': 'application/json'
+            'x-api-key': API_KEY
         }
 
-        response = requests.post(API_URL, headers=headers, json=request_body)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
