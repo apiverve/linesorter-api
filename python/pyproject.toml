@@ -1,17 +1,20 @@
 [project]
 name = "apiverve-linesorter"
-version = "1.1.12"
+version = "1.1.13"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
 description = "Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options."
-keywords = ["line sorter", "text sorter", "alphabetical sort", "sort lines", "text organization"]
+keywords = []
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.7"
+license = "MIT"
+dependencies = [
+    "requests>=2.25.0"
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Intended Audience :: Financial and Insurance Industry",
