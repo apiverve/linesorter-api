@@ -44,7 +44,11 @@ from apiverve_linesorter.apiClient import LinesorterAPIClient
 # Initialize the client with your APIVerve API key
 api = LinesorterAPIClient("[YOUR_API_KEY]")
 
-query = { "lines": [ "The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date" ], "order": "asc", "caseSensitive": false }
+query = {
+    "lines": ["The quick brown fox jumps over the lazy dog","An apple a day keeps the doctor away","banana","Cherry blossoms bloom in spring","date"],
+    "order": "asc",
+    "caseSensitive": false
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "lines": [ "The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date" ], "order": "asc", "caseSensitive": false }
+query = {
+    "lines": ["The quick brown fox jumps over the lazy dog","An apple a day keeps the doctor away","banana","Cherry blossoms bloom in spring","date"],
+    "order": "asc",
+    "caseSensitive": false
+}
 ```
 
 ###### Simple Request
@@ -136,7 +144,11 @@ from apiverve_linesorter.apiClient import LinesorterAPIClient, LinesorterAPIClie
 
 api = LinesorterAPIClient("[YOUR_API_KEY]")
 
-query = { "lines": [ "The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date" ], "order": "asc", "caseSensitive": false }
+query = {
+    "lines": ["The quick brown fox jumps over the lazy dog","An apple a day keeps the doctor away","banana","Cherry blossoms bloom in spring","date"],
+    "order": "asc",
+    "caseSensitive": false
+}
 
 try:
     result = api.execute(query)
@@ -157,7 +169,11 @@ from apiverve_linesorter.apiClient import LinesorterAPIClient, LinesorterAPIClie
 
 api = LinesorterAPIClient("[YOUR_API_KEY]")
 
-query = { "lines": [ "The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date" ], "order": "asc", "caseSensitive": false }
+query = {
+    "lines": ["The quick brown fox jumps over the lazy dog","An apple a day keeps the doctor away","banana","Cherry blossoms bloom in spring","date"],
+    "order": "asc",
+    "caseSensitive": false
+}
 
 try:
     result = api.execute(query)
@@ -191,7 +207,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_linesorter.apiClient import LinesorterAPIClient, LinesorterAPIClientError
 
-query = { "lines": [ "The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date" ], "order": "asc", "caseSensitive": false }
+query = {
+    "lines": ["The quick brown fox jumps over the lazy dog","An apple a day keeps the doctor away","banana","Cherry blossoms bloom in spring","date"],
+    "order": "asc",
+    "caseSensitive": false
+}
 
 # Using context manager ensures proper cleanup
 with LinesorterAPIClient("[YOUR_API_KEY]") as api:
@@ -217,7 +237,11 @@ from apiverve_linesorter.apiClient import LinesorterAPIClient
 # Enable debug mode
 api = LinesorterAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "lines": [ "The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date" ], "order": "asc", "caseSensitive": false }
+query = {
+    "lines": ["The quick brown fox jumps over the lazy dog","An apple a day keeps the doctor away","banana","Cherry blossoms bloom in spring","date"],
+    "order": "asc",
+    "caseSensitive": false
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -232,8 +256,13 @@ from apiverve_linesorter.apiClient import LinesorterAPIClient
 
 api = LinesorterAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "lines": ["The quick brown fox jumps over the lazy dog","An apple a day keeps the doctor away","banana","Cherry blossoms bloom in spring","date"],
+    "order": "asc",
+    "caseSensitive": false
+}
+
 try:
-    query = { "lines": [ "The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date" ], "order": "asc", "caseSensitive": false }
     result = api.execute(query)
     print(result)
 finally:
