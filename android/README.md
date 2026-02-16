@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:linesorter-api:1.1.13'
+    implementation 'com.github.apiverve:linesorter-api:1.1.14'
 }
 ```
 
@@ -47,9 +47,9 @@ LineSorterAPIClient client = new LineSorterAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("lines", new ArrayList<>());
+    parameters.put("lines", Arrays.asList("The quick brown fox jumps over the lazy dog", "An apple a day keeps the doctor away", "banana", "Cherry blossoms bloom in spring", "date"));
     parameters.put("order", "asc");
-    parameters.put("caseSensitive", true);
+    parameters.put("caseSensitive", false);
 
     // Execute the request
     APIResponse response = client.execute(parameters);
