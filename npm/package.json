@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/linesorter",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.",
   "main": "index.js",
   "types": "index.d.ts",
