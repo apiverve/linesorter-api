@@ -153,13 +153,6 @@ async function makeRequest() {
       "date",
       "The quick brown fox jumps over the lazy dog"
     ],
-    "original": [
-      "An apple a day keeps the doctor away",
-      "banana",
-      "Cherry blossoms bloom in spring",
-      "date",
-      "The quick brown fox jumps over the lazy dog"
-    ],
     "lineCount": 5,
     "order": "asc",
     "caseSensitive": false
