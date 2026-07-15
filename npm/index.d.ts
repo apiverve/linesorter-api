@@ -4,20 +4,31 @@ declare module '@apiverve/linesorter' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface linesorterResponse {
     status: string;
     error: string | null;
     data: LineSorterData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface LineSorterData {
-      sorted:        string[];
-      original:      string[];
-      lineCount:     number;
-      order:         string;
-      caseSensitive: boolean;
+      sorted:        (null | string)[];
+      lineCount:     number | null;
+      order:         null | string;
+      caseSensitive: boolean | null;
   }
 
   export default class linesorterWrapper {
