@@ -25,6 +25,9 @@ namespace APIVerve.API.LineSorter
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -32,16 +35,25 @@ namespace APIVerve.API.LineSorter
         [JsonProperty("sorted")]
         public string[] Sorted { get; set; }
 
-        [JsonProperty("original")]
-        public string[] Original { get; set; }
-
         [JsonProperty("lineCount")]
-        public long LineCount { get; set; }
+        public long? LineCount { get; set; }
 
         [JsonProperty("order")]
         public string Order { get; set; }
 
         [JsonProperty("caseSensitive")]
-        public bool CaseSensitive { get; set; }
+        public bool? CaseSensitive { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
