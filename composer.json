@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/linesorter",
+    "description": "Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "linesorter",
+        "line sorter",
+        "text sorter",
+        "alphabetical sort",
+        "sort lines",
+        "text organization"
+    ],
+    "homepage": "https://apiverve.com/marketplace/linesorter?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/linesorter",
+        "source": "https://github.com/apiverve/linesorter-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Linesorter\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Linesorter\\Tests\\": "php/tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
