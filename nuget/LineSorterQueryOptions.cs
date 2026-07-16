@@ -14,7 +14,7 @@ namespace APIVerve.API.LineSorter
         /// Array of text lines to sort (max 10,000)
         /// </summary>
         [JsonProperty("lines")]
-        public string Lines { get; set; }
+        public List<string> Lines { get; set; }
 
         /// <summary>
         /// Sort order
@@ -26,6 +26,6 @@ namespace APIVerve.API.LineSorter
         /// Enable case-sensitive sorting
         /// </summary>
         [JsonProperty("caseSensitive")]
-        public string CaseSensitive { get; set; }
+        public bool? CaseSensitive { get; set; }
     }
 }
