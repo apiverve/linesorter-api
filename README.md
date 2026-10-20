@@ -1,13 +1,13 @@
-# [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
 Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.
 
 The Line Sorter API provides a simple, reliable way to integrate line sorter functionality into your applications. Built for developers who need production-ready line sorter capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -183,7 +183,7 @@ go get github.com/apiverve/linesorter-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/linesorter](https://docs.apiverve.com/ref/linesorter)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -251,7 +251,7 @@ A real response from the Line Sorter API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
