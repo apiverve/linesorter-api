@@ -3,11 +3,10 @@ Line Sorter API
 
 Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-linesorter.svg)](https://pypi.org/project/apiverve-linesorter/)
+
+This is a Python wrapper for the [Line Sorter API](https://apiverve.com/marketplace/linesorter?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-linesorter
 
 ## Configuration
 
-Before using the linesorter API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Line Sorter API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -64,7 +63,7 @@ except Exception as e:
 
 ## Usage
 
-The Line Sorter API documentation is found here: [https://docs.apiverve.com/ref/linesorter](https://docs.apiverve.com/ref/linesorter?utm_source=pypi&utm_medium=readme).
+The Line Sorter API documentation is found here: [https://docs.apiverve.com/ref/linesorter](https://docs.apiverve.com/ref/linesorter?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -111,13 +110,6 @@ print(result)
   "error": null,
   "data": {
     "sorted": [
-      "An apple a day keeps the doctor away",
-      "banana",
-      "Cherry blossoms bloom in spring",
-      "date",
-      "The quick brown fox jumps over the lazy dog"
-    ],
-    "original": [
       "An apple a day keeps the doctor away",
       "banana",
       "Cherry blossoms bloom in spring",
@@ -274,7 +266,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -285,12 +277,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
