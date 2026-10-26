@@ -4,6 +4,6 @@ require_relative "apiverve_linesorter/client"
 
 module APIVerve
   module Linesorter
-    VERSION = "1.2.2"
+    VERSION = "1.2.3"
   end
 end
