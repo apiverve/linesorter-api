@@ -1,7 +1,7 @@
 {
     "name": "apiverve/linesorter",
     "description": "Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "license": "MIT",
     "authors": [
