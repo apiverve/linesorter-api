@@ -1,6 +1,6 @@
 name: apiverve_linesorter
 description: "Line Sorter organizes text by sorting lines alphabetically in ascending or descending order with case-sensitive options."
-version: 1.2.5
+version: 1.2.6
 homepage: https://apiverve.com/marketplace/linesorter?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/linesorter-api/tree/main/dart
 
